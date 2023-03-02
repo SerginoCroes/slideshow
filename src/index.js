@@ -29,7 +29,7 @@ function moveImg(i) {
 }
 
 function draw() {
-    slider.style.transform = `translate(${-position * 800}px, 0px)`;
+    slider.style.transform = `translatex(${-position * 100}%)`;
     dotContainer.childNodes.forEach((element, index) => {
         element.style.transform = index === position ?  'scale(1.5)' : 'scale(1)';
         element.style.margin = index === position ? '6px 12px' : '6px';
